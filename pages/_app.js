@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
   }
 
   return (
-    <Layout>
+    <Layout isDimmed={lightsOnCount === 0}>
       <GlobalStyle />
       <Component
         {...pageProps}
